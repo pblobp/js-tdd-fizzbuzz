@@ -12,7 +12,8 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "test/**/*.spec.js"
+    "test": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register --watch"
   },
   "repository": {
     "type": "git",
