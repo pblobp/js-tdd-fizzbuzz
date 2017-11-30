@@ -1,0 +1,34 @@
+{
+  "name": "js-tdd-fizzbuzz",
+  "version": "1.0.0",
+  "description": "a simple tdd fizz buzz project",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  },
+  "scripts": {
+    "test": "test/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pblobp/js-tdd-fizzbuzz.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "tdd",
+    "mocha",
+    "chai"
+  ],
+  "author": "Pablo Boff Pigozzo <pblobp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pblobp/js-tdd-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/pblobp/js-tdd-fizzbuzz#readme"
+}
