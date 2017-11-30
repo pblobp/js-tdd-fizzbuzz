@@ -14,12 +14,16 @@ describe('Main', () => {
 
   it('should return `FizzBuzz` when multiple of 3 and 5', () => {
     expect(fizzBuzz(5)).to.be.equal('Buzz');
-    expect(fizzBuzz(10)).to.be.equal('Buzz');    
+    expect(fizzBuzz(10)).to.be.equal('Buzz');
     expect(fizzBuzz(3)).to.be.equal('Fizz');
     expect(fizzBuzz(6)).to.be.equal('Fizz');
   });
 
   it('should return a `number` when non-multiple', () => {
     expect(fizzBuzz(7)).to.be.a('number');
+  });
+
+  it('should return a zero when zero', () => {
+    expect(fizzBuzz(0)).to.be.equal(0);
   });
 });

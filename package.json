@@ -9,11 +9,20 @@
     "chai": "^4.1.2"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register --watch"
+    "test:tdd": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "functions" : 80,
+    "lines" : 80,
+    "reporter": ["text", "html"],
+    "exclude": ["test/**"]
   },
   "repository": {
     "type": "git",
